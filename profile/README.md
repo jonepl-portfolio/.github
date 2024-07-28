@@ -7,6 +7,7 @@ This GitHub Organization has been created to organize and share my web portfolio
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
+- [Running Application](#running-application)
 - [Usage](#usage)
 - [Contact](#contact)
 
@@ -34,17 +35,16 @@ This architecture is designed to accept requests through an Nginx reverse proxy 
 
 2. Download shared-files
     ```bash
-    git clone https://github.com/jonepl-portfolio/.github.git 
+    curl -L -o setup.sh https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/setup.sh
     ```
 
-3. Set up Docker Swarm:
+3. Run setup script
     ```bash
-    docker swarm init
+    . setup.sh
     ```
-3. Deploy the stack:
-    ```bash
-    docker stack deploy -c docker-compose.yml web-portfolio
-    ```
+
+## Running Application
+* TBD
 
 ## Usage
 - Access the web portfolio at `https://yourdomain.com`
