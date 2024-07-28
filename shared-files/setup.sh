@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 download_mock_server_files () {
     # Define the files and their URLs
     files=(
