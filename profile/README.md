@@ -33,7 +33,7 @@ This architecture is designed to accept requests through an Nginx reverse proxy 
     $ cd /your/project/directory
     ```
 
-2. Download shared-files
+2. Download setup script
     ```bash
     curl -L -o setup.sh https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/setup.sh
     ```
