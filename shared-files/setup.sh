@@ -1,5 +1,9 @@
 #!/bin/bash
 
+curl -L -o setup.sh https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/Dockerfile
+curl -L -o setup.sh https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/docker-compose.yml
+curl -L -o setup.sh https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/makefile
+
 # List of repositories to clone
 repos=(
     "https://github.com/jonepl-portfolio/app-scripts.git"
