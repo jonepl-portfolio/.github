@@ -2,6 +2,7 @@
 download_mock_server_files () {
     # Define the files and their URLs
     files=(
+        ".env https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/.env"
         "Dockerfile https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/Dockerfile"
         "docker-compose.yml https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/docker-compose.yml"
         "makefile https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/makefile"
