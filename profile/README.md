@@ -62,9 +62,9 @@ This architecture is designed to accept requests through an Nginx reverse proxy 
     ```
 
 ## Usage
-- Access the web portfolio at `https://yourdomain.com`
-- Access Portainer at `https://yourdomain.com/portainer`
-- APIs are accessible via subdomains (e.g., `https://api.yourdomain.com`)
+- Access the web portfolio at `https://localhost.com`
+- Access Portainer at `https://portainer.localhost.com`
+- APIs are accessible via subdomains (e.g., `https://api.localhost.com`)
 
 ## Contact
 For questions or support, please contact [plj.coding@gmail.com](mailto:plj.coding@gmail).
