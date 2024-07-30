@@ -44,7 +44,22 @@ This architecture is designed to accept requests through an Nginx reverse proxy 
     ```
 
 ## Running Application
-* TBD
+1. Build the mock server image
+    ```bash
+    $ make build-server
+    ```
+2. Start the mock service
+    ```bash
+    $ make start-server
+    ```
+3. Access endpoints
+    ```bash
+    $ curl https://localhost
+    ```
+4. destroy mock server
+    ```bash
+    $ make destroy-server
+    ```
 
 ## Usage
 - Access the web portfolio at `https://yourdomain.com`
