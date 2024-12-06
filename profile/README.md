@@ -1,8 +1,10 @@
 # Web Portfolio
 
-This GitHub Organization has been created to organize and share my web portfolio and relevant applications using a microservice architecture with Docker Swarm.
+Welcome to my web portfolio! This GitHub Organization showcases my work and technical expertise through a microservice architecture implemented using Docker Swarm.
 
 ## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
 - [Design](#design)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
@@ -11,11 +13,24 @@ This GitHub Organization has been created to organize and share my web portfolio
 - [Usage](#usage)
 - [Contact](#contact)
 
+# Overview
+
+This portfolio demonstrates a microservice-based architecture built for scalability, maintainability, and security. It uses an NGINX reverse proxy to route requests to subdomain-based APIs and services, secured with TLS certificates generated internally.
+
+The architecture includes an integrated Portainer instance for centralized management, making it easier to monitor and control the Docker Swarm stack.
+
+# Features
+* Microservice Architecture: Scalable and modular design with multiple services interacting through a shared network.
+* Secure Communication: TLS encryption for all domains.
+* Centralized Management: Portainer integration for efficient service monitoring.
+* Subdomain Routing: APIs and services accessible through unique subdomains.
+
+
 # Design
 
 ![t](./imgs/Hosted-App-Overall-App.jpg)
 
-This architecture is designed to accept requests through an Nginx reverse proxy that routes all requests through a shared Docker Swarm network. The reverse proxy utilizes TLS certificates for all domains from an internal service using a private network used by the service and the API Gateway.For application maintainability, the architecture is equipped with an integrated instance of Portainer.
+Requests are routed through an NGINX reverse proxy using a private Docker Swarm network. This ensures secure and efficient communication between services. TLS certificates are automatically managed by an internal Certbot service, enhancing the security of all endpoints.
 
 ## Features
 - Microservice architecture using Docker Swarm
@@ -23,48 +38,9 @@ This architecture is designed to accept requests through an Nginx reverse proxy 
 - Centralized management with Portainer
 - Scalable and maintainable setup
 
-## Prerequisites
-- Docker
-- Docker Swarm
+## For Developers
 
-## Installation
-1. Navigate to you projects directory
-    ```bash
-    $ cd /your/project/directory
-    ```
-
-2. Download setup script
-    ```bash
-    curl -L -o setup.sh https://raw.githubusercontent.com/jonepl-portfolio/.github/main/shared-files/setup.sh
-    ```
-
-3. Run setup script
-    ```bash
-    . setup.sh
-    ```
-
-## Running Application
-1. Build the mock server image
-    ```bash
-    $ make build-server
-    ```
-2. Start the mock service
-    ```bash
-    $ make start-server
-    ```
-3. Access endpoints
-    ```bash
-    $ curl https://localhost
-    ```
-4. destroy mock server
-    ```bash
-    $ make destroy-server
-    ```
-
-## Usage
-- Access the web portfolio at `https://localhost.com`
-- Access Portainer at `https://portainer.localhost.com`
-- APIs are accessible via subdomains (e.g., `https://api.localhost.com`)
+If you'd like to explore or reproduce this setup, see the [Installation Guide](./INSTALL.md).
 
 ## Contact
 For questions or support, please contact [plj.coding@gmail.com](mailto:plj.coding@gmail).
