@@ -7,10 +7,7 @@ Welcome to my web portfolio! This GitHub Organization showcases my work and tech
 - [Features](#features)
 - [Design](#design)
 - [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Running Application](#running-application)
-- [Usage](#usage)
+- [For Developers](#for-developers)
 - [Contact](#contact)
 
 # Overview
@@ -31,12 +28,6 @@ The architecture includes an integrated Portainer instance for centralized manag
 ![t](./imgs/Hosted-App-Overall-App.jpg)
 
 Requests are routed through an NGINX reverse proxy using a private Docker Swarm network. This ensures secure and efficient communication between services. TLS certificates are automatically managed by an internal Certbot service, enhancing the security of all endpoints.
-
-## Features
-- Microservice architecture using Docker Swarm
-- Secure communication with TLS certificates
-- Centralized management with Portainer
-- Scalable and maintainable setup
 
 ## For Developers
 
